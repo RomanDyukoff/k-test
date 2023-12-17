@@ -1,0 +1,32 @@
+- var contentList = [
+-   {title: 'Виджеты', description: '30 готовых решений'},
+-   {title: 'Dashboard', description: 'с показателями вашего бизнеса'},
+-   {title: 'Skype Аудит', description: 'отдела продажи CRM системы'},
+-   {title: '35 дней', description: 'использования CRM'}
+- ]
+
+section.welcome 
+
+	.container.welcome__container 
+
+		article.represent
+
+			h1.represent__title Зарабатывайте больше
+				span с WELBEX
+
+			p.represent__text.
+				Развиваем и контролируем продажи за вас
+
+		article.content 
+
+			h2.content__title.
+				Вместе с <span>бесплатной консультацией</span> мы дарим:
+
+			ul.content__list
+				each item in contentList
+					li.content__item
+						h3= item.title
+						p= item.description
+
+			button.content__button
+				span Получить консультацию

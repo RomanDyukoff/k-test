@@ -1,0 +1,38 @@
+- var items = ['Услуги', 'Виджеты', 'Интеграции', 'Кейсы', 'Сертификаты'];
+
+header.header
+
+	.container.header__container 
+
+		article.header__wrapper
+			.header__logo 
+
+				img(src=require("../../assets/img/logo_welbex.svg"), alt="logo")
+
+				p.
+					крупный интегратор CRM в Росcии и ещё 8 странах
+
+			nav.header__nav
+				ul.header__list
+					each item in items
+						li.header__item
+							a(href="#")= item
+
+		.header__contacts
+			a(href="tel:+7 555 555-55-55") +7 555 555-55-55
+
+			ul.header__socials
+				li.header__social
+					a(href="#" target="_blank")  
+						img(src=require("../../assets/img/telegram.svg"), alt="telegram")
+				li.header__social
+					a(href="#" target="_blank")
+						img(src=require("../../assets/img/whatsapp.svg"), alt="whatsapp")
+				li.header__social
+					a(href="#" target="_blank") 
+						img(src=require("../../assets/img/viber.svg"), alt="viber")
+
+
+
+
+
